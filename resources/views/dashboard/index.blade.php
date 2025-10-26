@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Dashboard Overview - Tawuniya PHM')
+@section('title', 'Dashboard Overview - Med PHM')
 
 @section('content')
 <div class="d-flex justify-content-between align-items-center mb-4">
@@ -185,7 +185,7 @@
                             </td>
                             <td>{{ $session->started_at->format('M j, Y H:i') }}</td>
                             <td>
-                                <a href="{{ route('dashboard.session-detail', $session) }}" 
+                                <a href="{{ route('dashboard.session-detail', $session) }}"
                                    class="btn btn-sm btn-outline-primary">
                                     <i class="fas fa-eye"></i>
                                 </a>

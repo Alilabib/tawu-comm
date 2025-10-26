@@ -21,7 +21,7 @@ class AdminAuth
         }
 
         // Check if user is admin (has admin email)
-        if (!Auth::user()->email || !str_ends_with(Auth::user()->email, '@tawuniya.com')) {
+        if (!Auth::user()->email || !str_ends_with(Auth::user()->email, '@med.com')) {
             Auth::logout();
             return redirect()->route('login')->with('error', 'Access denied. Admin privileges required.');
         }

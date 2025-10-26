@@ -17,7 +17,7 @@ class AuthController extends Controller
         if (Auth::check()) {
             return redirect()->route('dashboard.index');
         }
-        
+
         return view('auth.login');
     }
 
@@ -37,7 +37,7 @@ class AuthController extends Controller
             $request->session()->regenerate();
 
             // Check if user is admin
-            if (!str_ends_with(Auth::user()->email, '@tawuniya.com')) {
+            if (!str_ends_with(Auth::user()->email, '@med.com')) {
                 Auth::logout();
                 return back()->withErrors([
                     'email' => 'Access denied. Admin privileges required.',

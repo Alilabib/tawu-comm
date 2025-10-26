@@ -17,10 +17,10 @@ class DatabaseSeeder extends Seeder
     {
         // Create admin user
         User::create([
-            'name' => 'Admin User',
+            'name' => 'Med Admin',
             'phone' => '+966500000000',
-            'email' => 'admin@tawuniya.com',
-            'password' => Hash::make('password123'),
+            'email' => 'admin@med.com',
+            'password' => Hash::make('admin123'),
             'email_verified_at' => now(),
         ]);
 
